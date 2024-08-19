@@ -6,12 +6,15 @@ import net.lemnik.eodsql.ResultColumn;
  * Data object representing a person's details in the database.
  */
 public class PersonDO {
-    @ResultColumn(value = "pAge")
+    @ResultColumn(value = "id")
+    public int id;
+    
+    @ResultColumn(value = "age")
     public int age;
 
-    @ResultColumn(value = "pName")
+    @ResultColumn(value = "name")
     public String name;
 
-    @ResultColumn(value = "pGender")
+    @ResultColumn(value = "gender")
     public char gender;
 }
