@@ -17,4 +17,6 @@ public class PersonDO {
 
     @ResultColumn(value = "gender")
     public char gender;
+
+    public PersonDo(){}
 }
