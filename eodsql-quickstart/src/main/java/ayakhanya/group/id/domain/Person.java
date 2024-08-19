@@ -1,13 +1,15 @@
 package ayakhanya.group.id.domain;
 
 /**
- * in a One to Many Entity Relationship a person can have many friends
- * */
+ * Represents a person in a one-to-many entity relationship, where a person can have many friends.
+ */
 public class Person {
     private int age;
     private String name;
     private String email;
     private char gender;
+
+    // Getters and Setters to adhere to encapsulation
 
     public int getAge() {
         return age;

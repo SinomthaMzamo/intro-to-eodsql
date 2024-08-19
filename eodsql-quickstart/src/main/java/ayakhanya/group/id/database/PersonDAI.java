@@ -1,6 +1,9 @@
 package ayakhanya.group.id.database;
 import net.lemnik.eodsql.*;
 
+/**
+ * Data Access Interface for performing CRUD operations on Person entities.
+ */
 public interface PersonDAI extends BaseQuery{
 
     // create new person entry (C) using PersonDO fields
@@ -27,7 +30,7 @@ public interface PersonDAI extends BaseQuery{
     @Select("SELECT count(*) FROM friends "
             + "WHERE friendId = {1} "
     )
-    int getNumberOfFriends(int personId);
+    int getNumberOfFriends(int friendId);
 
 
     // delete entry(ies)

@@ -2,11 +2,13 @@ package ayakhanya.group.id.domain;
 
 import java.util.List;
 /**
- * in a One to Many Entity Relationship a group of friends can have mutual friends friends
- * */
+ * Represents a friend in a one-to-many entity relationship, where a group of friends can have mutual friends.
+ */
 public class Friend {
     private Person self;
     private List<Friend> friendsList;
+
+    // Getters and Setters
 
     public Person getSelf() {
         return self;
